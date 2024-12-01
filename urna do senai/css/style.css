@@ -1,0 +1,142 @@
+
+a{
+    text-decoration: none;
+}
+header{
+    background-color: #313B72;
+    height: 100px;
+    display: flex;
+    font-family: poppins;
+}
+h1{
+    margin-left: 30px;
+    margin-top: 29px;
+}
+body{
+    position: relative;  /* Necessário para que o footer seja posicionado em relação ao body */
+    min-height: 100vh;
+    margin: 0px;
+    font-family: poppins;
+    color: #FFFAFF;
+    background-color: #FFFAFF;
+}
+#img-1{
+    background-image: url(../img/candidato.jpg);
+}
+
+#img-2{
+    background-image: url(../img/eleitor.jpg);
+}
+
+#img-3{
+    background-image: url(../img/voto.jpg);
+}
+
+#img-4{
+    background-image: url(../img/apuracao.jpg);
+}
+.imagens{
+    display: flex;
+    justify-content: center;
+}
+.product-image{
+    border-radius: 30px;
+    box-shadow: #d1ccd1 0px 0px 25px 0px;
+    width: 270px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+.overlay{
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 400px;
+    background: linear-gradient(to top, #0EAD69, transparent);
+}
+.text{
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    color: #FFFAFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+.card{
+    display: inline-block;
+    margin: 8% 2%;
+    padding: 12px;
+}
+.card:hover{
+    transform: scale(0.95);
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    transition-property: transform, color;
+}
+.card:not(:hover){
+    transform: scale(1);
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    transition-property: transform, color;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #313B72;
+    height: 91px;
+    font-family: poppins;
+    display: flex;
+    color: #FFFAFF;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    background-color: #0EAD69;
+    width: 25%;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    box-shadow: rgb(120, 120, 120) 0px 0px 30px 0.01px;
+    margin-top: 60px;
+}
+input {
+    display: flex;
+    font-family: poppins;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 95%;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+#button {
+    display: flex;
+    border: solid 2px #FFFAFF;
+    width: 100%;
+    margin: 6px;
+    border-radius: 19px;
+    font-family: poppins;
+    font-size: 18px;
+}
+#button:hover {
+    background-color: FFFAFF;
+    color: #0EAD69;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+#button:active {
+    transform: scale(0.9);
+}
+
+#button:not(:hover) {
+    background-color: #0EAD69;
+    color: #FFFAFF;
+    transition: all 0.2s ease-in;
+}
